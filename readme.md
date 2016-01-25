@@ -1,4 +1,4 @@
-# Simple router
+# Url matcher
 
 [![Build Status](https://img.shields.io/travis/weew/php-url-matcher.svg)](https://travis-ci.org/weew/php-url-matcher)
 [![Code Quality](https://img.shields.io/scrutinizer/g/weew/php-url-matcher.svg)](https://scrutinizer-ci.com/g/weew/php-url-matcher)
