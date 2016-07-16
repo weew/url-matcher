@@ -1,10 +1,10 @@
 # Url matcher
 
-[![Build Status](https://img.shields.io/travis/weew/php-url-matcher.svg)](https://travis-ci.org/weew/php-url-matcher)
-[![Code Quality](https://img.shields.io/scrutinizer/g/weew/php-url-matcher.svg)](https://scrutinizer-ci.com/g/weew/php-url-matcher)
-[![Test Coverage](https://img.shields.io/coveralls/weew/php-url-matcher.svg)](https://coveralls.io/github/weew/php-url-matcher)
-[![Version](https://img.shields.io/packagist/v/weew/php-url-matcher.svg)](https://packagist.org/packages/weew/php-url-matcher)
-[![Licence](https://img.shields.io/packagist/l/weew/php-url-matcher.svg)](https://packagist.org/packages/weew/php-url-matcher)
+[![Build Status](https://img.shields.io/travis/weew/url-matcher.svg)](https://travis-ci.org/weew/url-matcher)
+[![Code Quality](https://img.shields.io/scrutinizer/g/weew/url-matcher.svg)](https://scrutinizer-ci.com/g/weew/url-matcher)
+[![Test Coverage](https://img.shields.io/coveralls/weew/url-matcher.svg)](https://coveralls.io/github/weew/url-matcher)
+[![Version](https://img.shields.io/packagist/v/weew/url-matcher.svg)](https://packagist.org/packages/weew/url-matcher)
+[![Licence](https://img.shields.io/packagist/l/weew/url-matcher.svg)](https://packagist.org/packages/weew/url-matcher)
 
 ## Table of contents
 
@@ -16,7 +16,7 @@
 
 ## Installation
 
-`composer require weew/php-url-matcher`
+`composer require weew/url-matcher`
 
 ## Introduction
 
