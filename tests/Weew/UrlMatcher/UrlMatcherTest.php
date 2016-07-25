@@ -116,4 +116,20 @@ class UrlMatcherTest extends PHPUnit_Framework_TestCase {
         $matcher->setPatterns($patterns);
         $this->assertTrue($matcher->getPatterns() === $patterns);
     }
+
+    public function test_replace() {
+        $matcher = new UrlMatcher();
+        $this->assertEquals(
+            '/baz/bar/yolo/baz',
+            $matcher->replace('/{foo}/bar/yolo/{foo}', 'foo', 'baz')
+        );
+    }
+
+    public function test_replace_in_host() {
+        $matcher = new UrlMatcher();
+        $this->assertEquals(
+            'baz.yolo.swag/bar/yolo/baz',
+            $matcher->replace('{foo}.yolo.swag/bar/yolo/{foo}', 'foo', 'baz')
+        );
+    }
 }

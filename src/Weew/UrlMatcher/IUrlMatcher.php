@@ -24,6 +24,23 @@ interface IUrlMatcher {
     function parse($pattern, $path, array $patterns = []);
 
     /**
+     * @param string $path
+     * @param string $key
+     * @param string $value
+     *
+     * @return string
+     */
+    function replace($path, $key, $value);
+
+    /**
+     * @param string $path
+     * @param array $replacements
+     *
+     * @return string
+     */
+    function replaceAll($path, array $replacements);
+
+    /**
      * @return IMatchPattern[]
      */
     function getPatterns();

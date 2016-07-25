@@ -58,6 +58,33 @@ class UrlMatcher implements IUrlMatcher {
     }
 
     /**
+     * @param string $path
+     * @param string $key
+     * @param string $value
+     *
+     * @return string
+     */
+    public function replace($path, $key, $value) {
+        $path = str_replace(s('{%s}', $key), $value, $path);
+
+        return $path;
+    }
+
+    /**
+     * @param string $path
+     * @param array $replacements
+     *
+     * @return string
+     */
+    public function replaceAll($path, array $replacements) {
+        foreach ($replacements as $key => $value) {
+            $path = $this->replace($path, $key, $value);
+        }
+
+        return $path;
+    }
+
+    /**
      * @return IMatchPattern[]
      */
     public function getPatterns() {

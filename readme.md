@@ -13,6 +13,7 @@
 - [Usage](#usage)
 - [Matching](#matching)
 - [Parsing](#parsing)
+- [Replacing](#replacing)
 
 ## Installation
 
@@ -112,4 +113,16 @@ $dictionary->get('id');
 $dictionary = $matcher->parse('users/{id}', 'users/abc');
 // null
 $dictionary->get('id');
+```
+
+### Replacing
+
+You can do the opposite of parsing by replacing placeholders with specific values.
+
+```php
+// api.service.com
+$matcher->replace('{subdomain}.service.com', 'subdomain', 'api');
+
+// api.service.com/v1
+$matcher->replaceAll('{subdomain}.service.com/{version}', ['subdomain' => 'api', 'version' => 'v1']);
 ```
